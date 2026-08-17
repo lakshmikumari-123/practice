@@ -39,7 +39,7 @@ jobs:
     - name: tests
       run: mvn test
     - name: docker
-      run: docker build -t ci-app .
+      run: docker build -t Kum6/ci-app:latest .
     - name: Docker login
       uses: docker/login-action@v4
       with:
