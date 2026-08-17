@@ -39,14 +39,14 @@ jobs:
     - name: tests
       run: mvn test
     - name: docker
-      run: docker build -t Kum6/ci-app:latest .
+      run: docker build -t kum6/ci-app:latest .
     - name: Docker login
       uses: docker/login-action@v4
       with:
         username: ${{vars.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_TOKEN}}
     - name: push docker image
-      run: docker push Kum6/ci-app:latest
+      run: docker push kum6/ci-app:latest
   
      
   
