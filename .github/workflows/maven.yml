@@ -38,5 +38,8 @@ jobs:
         path: target/*.jar
     - name: tests
       run: mvn test
+    - name: docker
+      run: docker build -t ci-app .
+    
 
    
