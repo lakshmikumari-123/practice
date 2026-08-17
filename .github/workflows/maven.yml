@@ -40,6 +40,8 @@ jobs:
       run: mvn test
     - name: docker
       run: docker build -t ci-app .
+    - name: docker container
+      run: docker run --name ci_container ci-app
   
     
 
