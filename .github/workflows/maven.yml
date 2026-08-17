@@ -46,7 +46,8 @@ jobs:
         username: ${{secrets.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_TOKEN}}
     - name: push docker image
-      run: docker push Kum6/ci-app: latest
+      run: docker push ci-app: latest
+  
      
   
             
