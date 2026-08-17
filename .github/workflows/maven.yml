@@ -43,7 +43,7 @@ jobs:
     - name: Docker login
       uses: docker/login-action@v4
       with:
-        username: ${{vars.DOCKER_USERNAME}}
+        username: ${{secrets.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_TOKEN}}
     - name: push docker image
       run: docker push kum6/ci-app:latest
