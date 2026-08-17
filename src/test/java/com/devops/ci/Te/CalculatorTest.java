@@ -19,7 +19,7 @@ public class CalculatorTest
 	void testMultiply()
 	{
 		Calculator c=new Calculator();
-		assertEquals(28,c.multiply(4, 5));
+		assertEquals(20,c.multiply(4, 5));
 	}
 
 }
